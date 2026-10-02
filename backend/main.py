@@ -11,7 +11,7 @@ app = FastAPI(title="Predictive Product Review Simulator")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://predictive-product-review-simulator-uqon-8cx1imm8r.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
