@@ -19,21 +19,19 @@ function App() {
 
     try {
 
-       const response = await fetch(
+      const response = await fetch(
   "https://predictive-product-review-simulator-rlve78mjv.vercel.app/generate-review",
-        {
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json"
-          },
-
-          body: JSON.stringify({
-            product_idea: idea,
-            persona: persona
-          })
-        }
-      );
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      product_idea: idea,
+      persona: persona
+    })
+  }
+);
 
       if (!response.ok) {
         throw new Error("Backend request failed");
