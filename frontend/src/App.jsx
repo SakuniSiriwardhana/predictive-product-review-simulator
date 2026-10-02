@@ -19,8 +19,8 @@ function App() {
 
     try {
 
-      const response = await fetch(
-        "http://localhost:8000/generate-review",
+       const response = await fetch(
+  "https://predictive-product-review-simulator-rlve78mjv.vercel.app/generate-review",
         {
           method: "POST",
 
