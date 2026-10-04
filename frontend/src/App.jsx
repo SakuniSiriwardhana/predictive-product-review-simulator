@@ -19,7 +19,7 @@ function App() {
 
     try {
  const response = await fetch(
-  "https://predictive-product-review-simulator-49nnfgdtu.vercel.app/generate-review",
+  "https://predictive-product-review-simulator.vercel.app/generate-review",
   {
     method: "POST",
     headers: {
